@@ -4,6 +4,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
-</ion-content>
+<ion-content>
+  <img [src]="currentImage" *ngIf="currentImage">
+  
+  <ion-fab center bottom>
+    <button ion-fab (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-content>
